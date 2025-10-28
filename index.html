@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gaurav Kondane</title>
+    <title>Gaurav Kondane </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -30,6 +30,70 @@
 //--//-->   ABOUT
 ======================================*/
 
+/* new */
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-brand .ftco-footer-social span {
+  font-size: 1.2rem;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.navbar-brand .ftco-footer-social span:hover {
+  color: #0a66c2; /* LinkedIn blue */
+  transform: scale(1.2);
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.card-text {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+.btn-outline-primary {
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+.ftco-footer-social li {
+  margin: 0 8px;
+}
+.ftco-footer-social span {
+  font-size: 1.3rem;
+  color: #343a40;
+  transition: color 0.3s ease;
+}
+.ftco-footer-social span:hover {
+  color: #0a66c2;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+/* for this */
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -113,14 +177,16 @@
   transform: translateY(-5px);
   transition: 0.3s ease;
 }
-/* .certificate-wrap ul li {
-  border-bottom: 1px solid #eee;
-  padding: 10px 0;
+.ftco-footer-social a:hover span {
+  color: #0a66c2; /* LinkedIn blue */
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
-.certificate-wrap a.btn-sm {
-  white-space: nowrap;
-} */
+.nav-link.active {
+  color: #ffc107 !important;
+  font-weight: bold;
+}
 
 
 </style>
@@ -132,7 +198,21 @@
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Gaurav Kondane</a>
+	      <div class="navbar-brand d-flex align-items-center">
+				<a href="index.html" class="me-2 text-white text-decoration-none">Gaurav Kondane</a>
+ 			<ul class="ftco-footer-social list-unstyled d-flex align-items-center mb-0">
+   				 <li class="ftco-animate">
+      				<a href="http://www.linkedin.com/in/gaurav-kondane-894469374" target="_blank">
+        				<span class="icon-linkedin"></span>
+     				 </a>
+    			</li>
+    			<li class="ftco-animate">
+      				<a href="https://github.com/gaurav23-ops" target="_blank">
+       					 <span class="icon-github"></span>
+      				</a>
+   				 </li>
+ 			 </ul>
+			</div>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -175,6 +255,7 @@
 						'Engineer  ',
 						'Data Analyst  ',
 						];
+
 
 						// Create a function to display the typing animation for a given text
 						function playTypingAnimation(text) {
@@ -223,6 +304,9 @@
 										<p><span class="title-s">Name: </span> <span>Gaurav Kondane</span></p>
 										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
 										<p><span class="title-s">Address: </span> <span>Pune, India</span></p>
+
+										
+
 									  </div>
 									</div>
 								  </div>
@@ -270,6 +354,8 @@
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
+							
+								
 								<p> Aspiring Data Analyst with a strong foundation in Python, Pandas, SQL, and Power BI.
 I recently completed a Data Science course, where I gained practical experience in data cleaning, visualization, and building dashboards for business analysis.I’m passionate about using data to uncover hidden patterns, optimize business processes, and support strategic decisions.
 I’m eager to apply my skills in a real-world environment and grow into a data-driven problem solver.
@@ -284,7 +370,11 @@ Technical Skills: Python | Pandas | NumPy | SQL | Excel | Power BI | Data Visual
 								</ul>
 							</div>
 						</div>
-
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p><a href="http://www.linkedin.com/in/gaurav-kondane-894469374" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
                         
 					</div>
 				</div>
